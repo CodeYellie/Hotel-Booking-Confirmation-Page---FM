@@ -88,6 +88,7 @@ nav li:hover {
   font-weight: 400;
   font-size: 10px;
   color: var(--grey);
+  letter-spacing: 1px;
 }
 .weather-text {
   padding: 12px;
@@ -113,6 +114,7 @@ nav li:hover {
   color: var(--grey);
   padding-top: 16px;
   padding-bottom: 16px;
+  letter-spacing: 2px;
 }
 
 .bottom {
