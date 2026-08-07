@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue-wifi: hsl(230, 49%, 56%);
+  --pink-breakfast: hsl(340, 48%, 52%);
+  --orange-dark: hsl(15, 69%, 37%);
+  --orange-medium: hsl(15, 74%, 41%);
+  --orange: hsl(18, 62%, 47%);
+  --orange-light: hsl(22, 72%, 56%);
+  --yellow-dark: hsl(42, 83%, 58%);
+  --yellow-medium: hsl(44, 84%, 75%);
+  --yellow: hsl(45, 100%, 74%);
+  --yellow-light: hsl(41, 100%, 93%);
+  --black: hsl(33, 15%, 15%);
+  --dark-grey: hsl(33, 22%, 20%);
+  --grey: hsl(33, 17%, 41%);
+  --white: hsl(0, 0%, 100%);
+  --fraunces: "Fraunces";
+  --dmsans: "DM Sans";
+  --dmmono: "DM Mono";
+}
+/* Body start */
+body {
+  background-color: hsl(35, 60%, 96%);
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}
+
+.logo {
+  margin: 15px;
+}
