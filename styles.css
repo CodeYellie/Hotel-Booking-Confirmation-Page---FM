@@ -176,7 +176,7 @@ main {
 }
 /* Receipt card start */
 .receipt {
-  width: 400px;
+  width: 370px;
   box-shadow:
     rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -319,4 +319,72 @@ main {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+/* right card start */
+.booking-card {
+  display: flex;
+}
+.orange-top {
+  border-top: 1px dashed hsl(36, 22%, 85%);
+  padding: 16px 0px 16px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.orange {
+  background-color: var(--orange);
+  width: 370px;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.orange-welcome {
+  font-family: var(--dmsans);
+  font-size: 10px;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+.orange-start {
+  color: var(--yellow-medium);
+  font-family: var(--fraunces);
+  font-weight: 400;
+}
+.orange-host {
+  color: var(--yellow-light);
+  font-size: 38px;
+  font-family: var(--fraunces);
+  font-weight: 400;
+}
+.orange-middle {
+  display: flex;
+  flex-direction: column;
+}
+.orange-message {
+  color: var(--yellow-light);
+  font-family: var(--dmsans);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 32px;
+}
+.orange-bottom p {
+  color: var(--yellow-light);
+  font-family: var(--dmmono);
+  font-size: 12px;
+}
+.orange-bottom .orange-last {
+  font-size: 20px;
+  font-family: var(--fraunces);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.orange-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 100px;
 }
