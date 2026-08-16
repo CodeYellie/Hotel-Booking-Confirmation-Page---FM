@@ -331,7 +331,11 @@ main {
   justify-content: space-between;
 }
 .orange {
-  background-color: var(--orange);
+  background: radial-gradient(
+    circle at top right,
+    var(--orange-light),
+    var(--orange-dark)
+  );
   width: 370px;
   box-shadow:
     rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
