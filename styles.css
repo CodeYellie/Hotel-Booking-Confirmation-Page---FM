@@ -424,3 +424,14 @@ main {
 .cool-hover:hover .back-sun {
   opacity: 1;
 }
+.hover-text {
+  display: flex;
+  position: absolute;
+  width: 200px;
+  top: 450px;
+  left: 315px;
+  font-family: var(--dmsans);
+  color: var(--grey);
+  font-size: 12px;
+  font-weight: 400;
+}
