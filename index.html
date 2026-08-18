@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link
       rel="icon"
       type="image/png"
@@ -58,7 +57,7 @@
           </li>
         </ul>
       </nav>
-      <!-- Local weather -->
+      <!-- Local weather + copyright -->
       <div class="bottom">
         <div class="weather">
           <div class="weather-text">
@@ -76,10 +75,12 @@
           <p>© 2026 MAISON SOLEIL</p>
         </div>
       </div>
-      <!-- Sidebar ends -->
     </aside>
+    <!-- Sidebar ends -->
+
     <!-- Main content starts -->
     <main>
+      <!-- Header row -->
       <div class="main-top">
         <div class="top-left">
           <p>BOOKING · CONFIRMED</p>
@@ -93,16 +94,17 @@
           <button class="calendar">Add to calendar</button>
         </div>
       </div>
-      <!-- Booking cards start -->
+
+      <!-- Booking cards -->
       <div class="booking-card">
-        <!-- Receipt card -->
         <div class="cool-hover">
           <img src="assets/images/illustration-sun.svg" class="back-sun" />
           <div class="hover-text">
             <img src="assets/images/icon-sparkle.svg" />
-            <p>&nbsp;HOVER TO FAN s&nbsp;</p>
+            <p>&nbsp;HOVER TO FAN&nbsp;</p>
             <img src="assets/images/icon-sparkle.svg" />
           </div>
+          <!-- Receipt card -->
           <div class="receipt">
             <div class="receipt-top">
               <div class="receipt-top-left">
@@ -172,31 +174,86 @@
             </div>
           </div>
         </div>
-        <!-- Booking cards end -->
       </div>
-      <!-- Guest info row starts -->
+      <!-- Booking cards end -->
+
+      <!-- Guest info cards -->
       <div class="guest-info">
         <!-- Arrival -->
-        <div class="arrival">
-          Arrival 01 Check-in from 15:00 Sat, 25 April Ring the brass bell by
-          the blue door. If we're at the market, the key is in the terracotta
-          pot by the olive tree.
+        <div class="info-card">
+          <div class="info-card-top">
+            <div class="info-card-label">
+              <div class="info-icon arrival-icon">
+                <img src="assets/images/icon-key.svg" alt="bed icon" />
+              </div>
+              <p class="info-label">ARRIVAL</p>
+            </div>
+            <p class="info-number arrival-number">01</p>
+          </div>
+          <div class="info-card-body">
+            <h3>Check-in from 15:00</h3>
+            <p class="info-subtitle">Sat, 25 April</p>
+            <p class="info-description">
+              Ring the brass bell by the blue door. If we're at the market, the
+              key is in the terracotta pot by the olive tree.
+            </p>
+          </div>
         </div>
         <!-- Wifi -->
-        <div class="wifi">
-          Wifi 02 Le Soleil · Guest Password below Network Le Soleil · Guest
-          Password soleil-2026 Copy
+        <div class="info-card">
+          <div class="info-card-top">
+            <div class="info-card-label">
+              <div class="info-icon wifi-icon">
+                <img src="assets/images/icon-wifi.svg" alt="wifi icon" />
+              </div>
+              <p class="info-label">WIFI</p>
+            </div>
+            <p class="info-number wifi-number">02</p>
+          </div>
+          <div class="info-card-body">
+            <h3>Le Soleil · Guest</h3>
+            <p class="info-subtitle">Password below</p>
+            <div class="wifi-details">
+              <div class="wifi-row">
+                <p class="wifi-field">NETWORK</p>
+                <p class="wifi-value">Le Soleil · Guest</p>
+              </div>
+              <div class="wifi-row">
+                <p class="wifi-field">PASSWORD</p>
+                <p class="wifi-value">soleil-2026</p>
+                <button class="copy-btn">COPY</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Breakfast -->
-        <div class="breakfast">
-          Breakfast 03 Served 8 - 10:30 On the terrace Fresh figs, Marseille
-          honey, pain au levain, and espresso. Gluten-free option? Leave a note
-          the night before.
+        <div class="info-card">
+          <div class="info-card-top">
+            <div class="info-card-label">
+              <div class="info-icon breakfast-icon">
+                <img
+                  src="assets/images/icon-breakfast.svg"
+                  alt="breakfast icon"
+                />
+              </div>
+              <p class="info-label">BREAKFAST</p>
+            </div>
+            <p class="info-number breakfast-number">03</p>
+          </div>
+          <div class="info-card-body">
+            <h3>Served 8 – 10:30</h3>
+            <p class="info-subtitle">On the terrace</p>
+            <p class="info-description">
+              Fresh figs, Marseille honey, pain au levain, and espresso.
+              Gluten-free option? Leave a note the night before.
+            </p>
+          </div>
         </div>
-        <!-- Guest info row ends -->
       </div>
-      <!-- Main content ends -->
+      <!-- Guest info cards end -->
     </main>
+    <!-- Main content ends -->
+
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.

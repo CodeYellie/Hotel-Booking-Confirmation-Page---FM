@@ -23,26 +23,30 @@
   --dmsans: "DM Sans";
   --dmmono: "DM Mono";
 }
-/* Body start */
+
+/* Body */
 body {
   background-color: hsl(35, 60%, 96%);
   display: grid;
   grid-template-columns: 290px 1fr;
 }
-/* Logo start */
+
+/* Logo */
 .logo {
   margin: 15px;
   padding-bottom: 10px;
   border-bottom: 1px solid hsl(36, 22%, 86%);
 }
 
-/* Navigation start */
+/* Sidebar */
 aside {
   border-right: 1px solid hsl(36, 22%, 86%);
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
+
+/* Navigation */
 nav {
   margin-left: 15px;
   margin-right: 15px;
@@ -65,7 +69,7 @@ nav li:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 
-/* Weather start */
+/* Weather */
 .weather {
   margin-left: 15px;
   margin-right: 15px;
@@ -101,7 +105,8 @@ nav li:hover {
   top: -25px;
   right: -15px;
 }
-/* Copyright start */
+
+/* Copyright */
 .copyright {
   margin-left: 15px;
   margin-right: 15px;
@@ -119,15 +124,18 @@ nav li:hover {
 .bottom {
   margin-top: auto;
 }
-/* Main top part start */
+
+/* Main */
 main {
   margin: 32px;
 }
+
+/* Main top */
 .main-top p {
   font-family: var(--dmmono);
-  font-size: 14px;
+  font-size: 11px;
   color: var(--grey);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 .name {
   font-family: var(--fraunces);
@@ -156,7 +164,7 @@ main {
   background-color: hsl(35, 60%, 96%);
   color: var(--black);
   border-radius: 24px;
-  padding: 10px 16px 10px 16px;
+  padding: 10px 16px;
   letter-spacing: 1px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
@@ -166,7 +174,7 @@ main {
   background-color: var(--black);
   color: var(--white);
   border-radius: 24px;
-  padding: 10px 16px 10px 16px;
+  padding: 10px 16px;
   letter-spacing: 1px;
 }
 .top-right {
@@ -174,7 +182,51 @@ main {
   gap: 16px;
   align-items: center;
 }
-/* Receipt card start */
+
+/* Booking card wrapper */
+.booking-card {
+  display: flex;
+  margin-top: 32px;
+}
+.cool-hover {
+  margin: auto;
+  position: relative;
+  min-width: 800px;
+  padding-bottom: 56px;
+}
+
+/* Sun illustration */
+.back-sun {
+  position: absolute;
+  width: 200px;
+  top: 100px;
+  left: 315px;
+  z-index: -2;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.cool-hover:hover .back-sun {
+  opacity: 1;
+}
+
+/* Hover text */
+.hover-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: var(--dmsans);
+  color: var(--grey);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* Receipt card */
 .receipt {
   width: 370px;
   box-shadow:
@@ -197,8 +249,8 @@ main {
 .receipt-top-left h4 {
   color: var(--black);
   font-family: var(--fraunces);
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-size: 18px;
+  letter-spacing: 0px;
   font-weight: 400;
 }
 .receipt-top-right {
@@ -225,29 +277,7 @@ main {
   text-align: center;
   border-bottom: 1px dashed hsl(36, 22%, 86%);
 }
-.checkin p {
-  font-family: var(--dmsans);
-  font-weight: 400;
-  font-size: 10px;
-  color: var(--grey);
-  letter-spacing: 1px;
-}
-.checkin h2 {
-  font-family: var(--fraunces);
-  font-weight: 400;
-  font-size: 32px;
-  color: var(--black);
-}
-.checkin .day {
-  font-family: var(--dmsans);
-  font-size: 12px;
-}
-.checkin {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 16px 0px 16px 0px;
-}
+.checkin p,
 .checkout p {
   font-family: var(--dmsans);
   font-weight: 400;
@@ -255,23 +285,27 @@ main {
   color: var(--grey);
   letter-spacing: 1px;
 }
+.checkin h2,
 .checkout h2 {
   font-family: var(--fraunces);
   font-weight: 400;
   font-size: 32px;
   color: var(--black);
 }
+.checkin .day,
 .checkout .day {
   font-family: var(--dmsans);
   font-size: 12px;
 }
+.checkin,
 .checkout {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 16px 0px 16px 0px;
+  padding: 16px 0px;
 }
-/* rundown start */
+
+/* Rundown */
 .rundown {
   padding: 8px 0px 16px 0px;
 }
@@ -294,7 +328,8 @@ main {
   padding-bottom: 16px;
   border-bottom: 1px solid hsl(36, 22%, 40%);
 }
-/* receipt bottom start */
+
+/* Receipt bottom */
 .receipt-bottom {
   display: flex;
   justify-content: space-between;
@@ -323,13 +358,11 @@ main {
   flex-direction: column;
   gap: 16px;
 }
-/* right card start */
-.booking-card {
-  display: flex;
-}
+
+/* Orange card */
 .orange-top {
   border-top: 1px dashed hsl(36, 22%, 85%);
-  padding: 16px 0px 16px 0px;
+  padding: 16px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -365,6 +398,7 @@ main {
   color: var(--yellow-medium);
   font-family: var(--fraunces);
   font-weight: 400;
+  font-size: 16px;
 }
 .orange-host {
   color: var(--yellow-light);
@@ -401,37 +435,142 @@ main {
   gap: 8px;
   margin-top: 100px;
 }
+
+/* Hover interactions */
 .cool-hover:hover .orange {
   transform: rotate(-4deg) translate(100px, 0px);
 }
 .cool-hover:hover .receipt {
   transform: rotate(4deg) translate(-100px, 0px);
 }
-.cool-hover {
-  margin: auto;
-  position: relative;
-  min-width: 800px;
+
+/* Guest info cards */
+.guest-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
 }
-.back-sun {
-  position: absolute;
-  width: 200px;
-  top: 100px;
-  left: 315px;
-  z-index: -2;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-.cool-hover:hover .back-sun {
-  opacity: 1;
-}
-.hover-text {
+.info-card {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   display: flex;
-  position: absolute;
-  width: 200px;
-  top: 450px;
-  left: 315px;
+  flex-direction: column;
+  gap: 16px;
+}
+.info-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+.info-card-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.info-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrival-icon {
+  background-color: var(--orange);
+}
+.wifi-icon {
+  background-color: var(--blue-wifi);
+}
+.breakfast-icon {
+  background-color: var(--pink-breakfast);
+}
+.info-icon img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+.info-label {
   font-family: var(--dmsans);
-  color: var(--grey);
   font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--dark-grey);
+}
+.info-number {
+  font-family: var(--fraunces);
+  font-size: 24px;
   font-weight: 400;
+}
+.arrival-number {
+  color: var(--orange-light);
+}
+.wifi-number {
+  color: var(--blue-wifi);
+}
+.breakfast-number {
+  color: var(--pink-breakfast);
+}
+.info-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.info-card-body h3 {
+  font-family: var(--fraunces);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--black);
+}
+.info-subtitle {
+  font-family: var(--dmsans);
+  font-size: 12px;
+  color: var(--grey);
+}
+.info-description {
+  font-family: var(--dmsans);
+  font-size: 14px;
+  color: var(--dark-grey);
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+/* Wifi card */
+.wifi-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+.wifi-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: hsl(35, 60%, 96%);
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.wifi-field {
+  font-family: var(--dmmono);
+  font-size: 10px;
+  color: var(--grey);
+  letter-spacing: 1px;
+  min-width: 70px;
+}
+.wifi-value {
+  font-family: var(--dmsans);
+  font-size: 12px;
+  color: var(--dark-grey);
+  flex: 1;
+}
+.copy-btn {
+  font-family: var(--dmmono);
+  font-size: 10px;
+  color: var(--grey);
+  background: none;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
