@@ -417,5 +417,10 @@ main {
   width: 200px;
   top: 100px;
   left: 315px;
-  z-index: 2;
+  z-index: -2;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.cool-hover:hover .back-sun {
+  opacity: 1;
 }
